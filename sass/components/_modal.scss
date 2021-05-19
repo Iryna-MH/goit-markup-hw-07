@@ -34,7 +34,7 @@
   }
   
   
-  .modal-btn {
+  .modal__btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -48,13 +48,13 @@
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    &:hover .close-btn {
+    &:hover .modal__btn--close {
         fill:var(--accent-color);
       }
   }
   
 
-  .modal-title {
+  .modal__title {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 12px;
@@ -64,7 +64,7 @@
   color: var(--title-color);
   }
   
-  .contact-form-field {
+  .contact-form__input {
     display: block;
     padding-left: 40px;
     margin-right: 0 auto;
@@ -79,24 +79,23 @@
     &:focus {
         border-color:var(--accent-color);
       }
-      &:focus + .contact-form-icon {
+      &:focus + .contact-form__icon {
         fill: var(--accent-color);
       }
   }
   
-  .contact-form-wrapper{
+  .contact-form__wrapper{
     position: relative;
     margin-bottom: 10px;
   }
   
-  .contact-form-icon {
+  .contact-form__icon {
     position: absolute;
     top: 50%;
     left: 14px;
-    /* transform: translateY(-50%); */
   }
   
-  .field-label {
+  .contact-form__label {
   display:block;
   font-size: 12px;
   margin-bottom: 4px;
@@ -123,23 +122,23 @@
         }
   }
   
-  .policy-text {
+  .contact-form__text {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: var(--text-color);
   }
   
-  .policy-link {
+  .contact-form__link {
     color: var(--accent-color);
     text-decoration: underline;
   }
   
-  .checkbox-wrapper {
+  .contact-form__wrapper--checkbox {
     margin-bottom: 30px;
   }
   
-  .icon-check-wrap{
+  .contact-form__span{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,25 +153,24 @@
     fill: var(--primary-bg-color);
   }
   
-  .checkbox-input {
-    &:checked + .checkbox-label > .icon-check-wrap {
+  .contact-form__input--checkbox {
+    &:checked + .contact-form__label--checkbox > .contact-form__span {
     border: none;
     background-color: var(--accent-color);
 }
-    &:focus + .checkbox-label > .icon-check-wrap {
+    &:focus + .contact-form__label--checkbox > .contact-form__span {
     border-color: var(--accent-color);
 }
 
   }
-  /* (ловимо фокус на інпут, спан має бордер і він тут є контейнером) */
   
-  .checkbox-label {
+  .contact-form__label--checkbox {
   display: flex;
   align-items: center;
   padding-left: 12px;
   }
   
-  .modal-send {
+  .contact-form__send {
     padding-left: 55px;
     padding-right: 55px;
   }
